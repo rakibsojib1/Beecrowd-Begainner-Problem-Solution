@@ -1,0 +1,22 @@
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main(){
+    double a,b,c,p, area;
+    cin>>a>>b>>c;
+    cout<<fixed;
+
+    if(((a+b)>c)&&((b+c)>a)&&((a+c)>b)){
+        p=a+b+c;
+        cout<<setprecision(1)<<"Perimetro = "<<p<<endl;
+    }else{
+        area=((a+b)/2)*c;
+        cout<<setprecision(1)<<"Area = "<<area<<endl;
+    }
+
+
+
+
+    return 0;
+}
