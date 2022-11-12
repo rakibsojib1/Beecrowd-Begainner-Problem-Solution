@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+
+    string Seller_Name;
+    cin >>Seller_Name;
+
+    double Fixed_Salary, Total_Sale;
+
+
+    cin>>Fixed_Salary>>Total_Sale;
+
+  double Total_salary_With_bonus = (Total_Sale*0.15)+Fixed_Salary;
+
+    cout<<"TOTAL = R$ "<<fixed<<setprecision(2)<<Total_salary_With_bonus<<endl;
+
+
+ 
+    return 0;
+}
