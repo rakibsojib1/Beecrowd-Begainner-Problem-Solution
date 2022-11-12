@@ -1,0 +1,45 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    double a,b,c,d,e;
+
+    cin>>fixed>>setprecision(1)>>a>>fixed>>setprecision(1)>>b>>fixed>>setprecision(1)>>c>>fixed>>setprecision(1)>>d;
+
+    double r =(a*2)+(b*3)+(c*4)+(d*1);
+    r= r/10;
+    cout<<"Media: "<<fixed<<setprecision(1)<<r<<endl;
+    if(r>=7.0)
+    {
+        cout<<"Aluno aprovado."<<endl;
+    }
+    else if(r<5.0){
+        cout<<"Aluno reprovado."<<endl;
+    }
+    else if(r>=5.0 && r<=6.9){
+       cout<<"Aluno em exame."<<endl; 
+
+       cin>> fixed>>setprecision(1)>>e;
+        cout<<"Nota do exame: "<<fixed<<setprecision(1)<<e<<endl;
+         double g=(r+e)/2;
+    if(g>=5.0)
+    {
+       cout<<"Aluno aprovado."<<endl; 
+    }
+    else if(g<=4.9)
+    {
+        cout<<"Aluno reprovado."<<endl; 
+    }
+   cout<<"Media final: "<<fixed<<setprecision(1)<<g<<endl;
+
+
+    }
+
+
+
+
+
+    return 0;
+}
