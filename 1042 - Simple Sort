@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c,i,j,temp,count,A[3];
+    cin>>a>>b>>c;
+    A[0]=a;A[1]=b;A[2]=c;
+    for(i=0;i<3-1;i++){
+        count=0;
+        for(j=0;j<3-1-i;j++){
+            if(A[j]>A[j+1]){
+                temp=A[j];
+                A[j]=A[j+1];
+                A[j+1]=temp;
+                count=1;
+            }
+        }if(count==0){
+            break;
+        }
+    }
+    cout<<A[0]<<endl<<A[1]<<endl<<A[2]<<endl<<endl;
+    cout<<a<<endl<<b<<endl<<c<<endl;
+   
+    return 0;
+}
