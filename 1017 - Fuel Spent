@@ -1,0 +1,16 @@
+#include <iostream>
+#include<iomanip>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+  int a,b;
+  cin>>a>>b;
+  double result = (a*b)/12.0;
+
+
+   cout <<fixed<<setprecision(3)<<result<<endl;
+
+    return 0;
+}
