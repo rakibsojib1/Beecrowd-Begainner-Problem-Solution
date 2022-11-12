@@ -1,0 +1,61 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    double n;
+    int a, b, c, d, e, f, g, h, i, j, k, l;
+    cin>>n;
+    a = n * 100;
+    b = a / 10000;
+    a = a % 10000;
+
+    c = a / 5000;
+    a = a % 5000;
+
+    d = a / 2000;
+    a = a % 2000;
+
+    e = a / 1000;
+    a = a % 1000;
+
+    f = a / 500;
+    a = a % 500;
+
+    g = a / 200;
+    a = a % 200;
+
+    h = a / 100;
+    a = a % 100;
+
+    i = a / 50;
+    a = a % 50;
+
+    j = a / 25;
+    a = a % 25;
+
+    k = a / 10;
+    a = a % 10;
+
+    l = a / 5;
+    a = a % 5;
+
+    cout<<"NOTAS:"<<endl;
+    cout<<b<<" nota(s) de R$ 100.00"<<endl;
+    cout<<c<<" nota(s) de R$ 50.00"<<endl;
+    cout<<d<<" nota(s) de R$ 20.00" <<endl;
+    cout<<e<<" nota(s) de R$ 10.00" <<endl;
+    cout<<f<<" nota(s) de R$ 5.00"<<endl;
+    cout<<g<<" nota(s) de R$ 2.00"<<endl;
+
+    cout<<"MOEDAS:"<<endl;
+    cout<<h<<" moeda(s) de R$ 1.00"<<endl;
+    cout<<i<<" moeda(s) de R$ 0.50"<<endl;
+    cout<<j<<" moeda(s) de R$ 0.25"<<endl;
+    cout<<k<<" moeda(s) de R$ 0.10"<<endl;
+    cout<<l<<" moeda(s) de R$ 0.05"<<endl;
+    cout<<a<<" moeda(s) de R$ 0.01"<<endl;
+
+    return 0;
+}
