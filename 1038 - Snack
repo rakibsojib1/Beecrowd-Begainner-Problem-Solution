@@ -1,0 +1,32 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    double c = b;
+    if(a==1)
+    {
+        cout<<"Total: R$ "<<fixed<<setprecision(2)<<c*4.0<<endl;
+    }
+    else if(a==2)
+    {
+        cout<<"Total: R$ "<<fixed<<setprecision(2)<<c*4.5<<endl;
+    }
+    else if(a==3)
+    {
+        cout<<"Total: R$ "<<fixed<<setprecision(2)<<c*5.0<<endl;
+    }
+    else if(a==4)
+    {
+        cout<<"Total: R$ "<<fixed<<setprecision(2)<<c*2.0<<endl;
+    }
+   else if(a==5)
+   {
+       cout<<"Total: R$ "<<fixed<<setprecision(2)<<c*1.50<<endl;
+   }
+
+    return 0;
+}
