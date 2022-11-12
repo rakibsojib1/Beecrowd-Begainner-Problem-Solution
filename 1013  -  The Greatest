@@ -1,0 +1,22 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main() {
+    int a,b,c,temp;
+    cin>>a>>b>>c;
+    temp=c;
+    if(c<b||c<a){
+        if(b<a){
+            temp=a;
+        }
+        else{
+        temp=b;
+    }
+
+    }
+cout<<temp<<" eh o maior"<<endl;
+
+
+    return 0;
+}
