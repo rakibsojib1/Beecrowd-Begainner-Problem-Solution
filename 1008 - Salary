@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+
+    double Employee_Number, Worked_hours;
+    double salary_per_hour;
+    cin>>Employee_Number>>Worked_hours>>salary_per_hour;
+
+  double Total_salaary = Worked_hours * salary_per_hour;
+
+    cout<<"NUMBER = "<<Employee_Number<<endl;
+    cout<<"SALARY = U$ "<<fixed<<setprecision(2)<<Total_salaary<<endl;
+
+ 
+    return 0;
+}
