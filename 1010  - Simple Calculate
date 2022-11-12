@@ -1,0 +1,20 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main() {
+
+    int a,b;
+    float c;
+    cin>>a>>b>>c;
+    int d,e;
+    float f;
+    cin>>d>>e>>fixed>>setprecision(2)>>f;
+    float result = (b*c)+(e*f);
+
+    cout << "VALOR A PAGAR: R$ "<<fixed<<setprecision(2)<<result<<endl;
+
+
+
+    return 0;
+}
