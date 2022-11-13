@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,c,d,r,e;
+    cin>>a>>b>>c>>d;
+    
+   // if( b<61&&d<61 && b>=0&&d>=0){  //both correct
+        if(c>a){
+            r = c-a;
+        }else if(a>c){
+            c = c+24;
+            r = c-a;
+        }else if(a==c && b!=d){
+            r=24;
+        }else{
+            r=24;
+        }
+        e = d-b;
+        if(r==24 && e>0){
+            r=0;
+        }
+        if(e<0){
+           r=r-1;
+           e = 60 + e;
+        }
+   // }
+    
+    cout<<"O JOGO DUROU "<<r<<" HORA(S) E "<<e<<" MINUTO(S)"<<endl;
+    
+    return 0;
+}
