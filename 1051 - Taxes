@@ -1,0 +1,34 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+    double a,r,c;
+    cin>>a;
+    cout<<fixed;
+    if(a>=0 && a<=2000.00){
+        cout<<"Isento"<<endl;
+    }
+    else if(2000.00<a){
+        if(a<=3000){
+            r=a-2000.00;
+             cout<<"R$ "<<setprecision(2)<<r*0.08<<endl;
+        }else if(a<=4500.00){
+            r=a-2000.00;
+            c=1000.00*0.08;
+            r=r-1000.00;
+            r=r*0.18;
+            cout<<"R$ "<<setprecision(2)<<c+r<<endl;
+        }else{
+            c=1000.00*0.08;
+            c=c+(1500.00*0.18);
+            r=a-4500.00;
+            r=r*0.28;
+             cout<<"R$ "<<setprecision(2)<<c+r<<endl;
+
+        }
+    }
+
+
+
+    return 0;
+}
