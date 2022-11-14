@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double a;
+    int count =0;
+   for(int i=0;i<5;i++){
+       cin>>a;
+       int b = int(a);
+       if(b%2==0){
+           count++;
+       }
+       
+   }
+    cout<<count<<" valores pares"<<endl;
+    
+    return 0;
+}
