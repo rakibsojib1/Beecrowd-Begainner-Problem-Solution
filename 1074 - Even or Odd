@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+   int n,a[10000];
+   cin>>n;
+   if(n>-10000 && n<10000){
+       for(int i=0; i<n; i++){
+       cin>>a[i];
+       }
+
+       for(int i=0; i<n; i++){
+       if(a[i]==0){
+           cout<<"NULL"<<endl;
+       }
+      else if(a[i]%2==0 && a[i]>0){
+           cout<<"EVEN POSITIVE"<<endl;
+       }else if( a[i]<0){
+           int r=a[i]*-1;
+           if(r%2==0){
+                cout<<"EVEN NEGATIVE"<<endl;
+           }else{
+               cout<<"ODD NEGATIVE"<<endl;
+           }
+       }else if(a[i]%2!=0 && a[i]>0){
+            cout<<"ODD POSITIVE"<<endl;
+       }
+   }
+  }
+
+    return 0;
+}
