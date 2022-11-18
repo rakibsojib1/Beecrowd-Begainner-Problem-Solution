@@ -1,0 +1,10 @@
+temp = 0
+count = 0
+for i in range(1, 101):
+    b = int(input())
+    if temp < b:
+        temp = b
+        count = i
+
+print(temp)
+print(count)
