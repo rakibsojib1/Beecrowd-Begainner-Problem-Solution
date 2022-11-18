@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int i,x,y;
+    x=-1;
+    y=8;
+    for(i = 0; i<5; i++){
+        x=x+2;
+        cout<<"I="<<x<<" J="<<y-1<<endl;
+        cout<<"I="<<x<<" J="<<y-2<<endl;
+        cout<<"I="<<x<<" J="<<y-3<<endl;
+        y=y+2;
+    }
+
+    return 0;
+}
