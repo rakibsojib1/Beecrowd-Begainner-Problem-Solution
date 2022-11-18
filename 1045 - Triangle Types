@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+   double A,B,C;
+   cin>>A>>B>>C;
+   double temp = A;
+   if(A<B || A<C){
+       if(B>C){
+          temp =B;
+          B=A;
+       }else{
+           temp=C;
+           C=A;
+       }
+   }
+   if(temp>=B+C){
+       cout<<"NAO FORMA TRIANGULO"<<endl;
+   }else if((temp*temp)==(B*B)+(C*C)){
+       cout<<"TRIANGULO RETANGULO"<<endl;
+   }else if((temp*temp)>(B*B)+(C*C)){
+        cout<<"TRIANGULO OBTUSANGULO"<<endl;
+   }else if((temp*temp)<(B*B)+(C*C)){
+        cout<<"TRIANGULO ACUTANGULO"<<endl;
+   }
+   
+   if(temp==B && temp==C && B==C){
+       cout<<"TRIANGULO EQUILATERO"<<endl;
+   }else if(temp==B || B==C || temp==C){
+       cout<<"TRIANGULO ISOSCELES"<<endl;
+   }
+   
+    return 0;
+}
