@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int i,x,y;
+    x=-2;
+    y=65;
+    for(i = 0; i<13; i++){
+        x=x+3;
+        y=y-5;
+        cout<<"I="<<x<<" J="<<y<<endl;
+    }
+
+    return 0;
+}
