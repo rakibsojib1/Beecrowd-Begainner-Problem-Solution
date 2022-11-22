@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int x,y,sum;
+    sum=0;
+    while(true){
+        cin>>x>>y;
+        if(x==0||y==0 || x<0||y<0){
+            break;
+        }
+        else if(x>y &&x>0&&y>0){
+            for(int i=y; i<=x;i++){
+                cout<<i<<" ";
+                sum = sum +i;
+            }cout<<"Sum="<<sum<<endl;
+            sum =0;
+        }else if(y>x&&x>0&&y>0){
+            for(int i=x; i<=y;i++){
+                cout<<i<<" ";
+                sum = sum +i;
+            }cout<<"Sum="<<sum<<endl;
+            sum=0;
+        }
+    }
+    
+    
+    
+    return 0;
+}
